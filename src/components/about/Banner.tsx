@@ -12,7 +12,7 @@ const Banner = ({ mousePosition }: Props) => {
   const size = 200;
 
   return (
-    <div className="relative flex items-center">
+    <div className="hidden relative md:flex items-center">
       <motion.div
         className="mask"
         animate={{

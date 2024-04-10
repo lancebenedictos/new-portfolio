@@ -39,7 +39,7 @@ const About = () => {
       id="about"
       ref={ref}
     >
-      <div>
+      <div className="px-6">
         <h1 className=" text-white text-5xl">About me (Hover below me)</h1>
 
         <Banner mousePosition={mousePosition} />

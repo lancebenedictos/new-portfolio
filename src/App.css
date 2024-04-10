@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-  background-color: #f4f4f4;
-}
-
-html {
-  -ms-overflow-style: none; /* Internet Explorer 10+ */
-  /* overflow-x: hidden; */
-  scrollbar-width: thin;
-}
-
 p,
 span,
 div {

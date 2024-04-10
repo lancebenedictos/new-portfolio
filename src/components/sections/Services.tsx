@@ -23,7 +23,7 @@ const Services = () => {
   return (
     <>
       <div
-        className={`min-h-[110vh] my-[150px]  z-20 top-0 ${
+        className={` container mx-auto min-h-[110vh] my-[150px]  z-20 top-0 ${
           isInView ? "opacity-100" : "opacity-0"
         } transition-opacity`}
         id="services"

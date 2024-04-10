@@ -63,7 +63,7 @@ const Projects = () => {
   }, [changeSection, isInView, section, setIsChangeable]);
 
   return (
-    <div className="min-h-[110vh]" id="projects" ref={ref}>
+    <div className="min-h-[110vh] px-4" id="projects" ref={ref}>
       <div ref={scope}>
         {projects.map((item) => (
           <FocusedProject key={`card-${item.id}`} project={item} />
@@ -71,7 +71,7 @@ const Projects = () => {
         <div>
           <h1 className=" text-5xl text-center">Projects</h1>
 
-          <div className="flex w-full gap-20 items-start container mx-auto">
+          <div className="flex w-full md:gap-20 items-start container mx-auto">
             <div className="w-full py-[50vh]">
               <ul>
                 {projects.map((item) => (

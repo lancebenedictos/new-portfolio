@@ -18,7 +18,7 @@ const ProjectTitle = ({ children, id }: Props) => {
   }, [id, inViewProject, isInView, setInViewProject]);
   return (
     <p
-      className={`text-5xl  font-bold py-16 project-title ${
+      className={`text-xl md:text-5xl  font-bold py-16 project-title ${
         isInView ? "text-black" : "text-gray-500"
       }`}
       ref={ref}

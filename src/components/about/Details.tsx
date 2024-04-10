@@ -15,7 +15,7 @@ const Details = () => {
         <h2 className=" text-2xl mt-4 underline underline-offset-4 font-medium">
           Awards
         </h2>
-        <span className="flex justify-between">
+        <span className="flex justify-between flex-col">
           <p className=" font-bold mt-4 text-xl">
             Seneca 2023 Smart Cities Hackathon
           </p>
@@ -23,17 +23,26 @@ const Details = () => {
           <a
             href="https://factory.cancred.ca/v1/assertion/538640d3e75e12dc2c79007a83a755ca73d9e33c"
             target="_blank"
-            className=" underline font-bold hover:text-[#ec4e39] flex items-center gap-2 underline-offset-4"
+            className="hidden md:flex underline font-bold hover:text-[#ec4e39]  items-center gap-2 underline-offset-4"
           >
             See credential
             <ExternalLink size={15} />
           </a>
         </span>
-        <span className="flex justify-between">
+        <span className="flex justify-between flex-col md:flex-row">
           <p>Second runner up & Category winner</p>
+          <a
+            href="https://factory.cancred.ca/v1/assertion/538640d3e75e12dc2c79007a83a755ca73d9e33c"
+            target="_blank"
+            className="flex md:hidden underline font-bold hover:text-[#ec4e39]  items-center gap-2 underline-offset-4"
+          >
+            See credential
+            <ExternalLink size={15} />
+          </a>
+
           <p>
             Verify with:
-            <span className=" font-bold">benedila@sheridancollege.ca</span>
+            <span className=" font-bold"> benedila@sheridancollege.ca</span>
           </p>
         </span>
 

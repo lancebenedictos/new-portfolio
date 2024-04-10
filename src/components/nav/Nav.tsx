@@ -32,7 +32,7 @@ const Nav = () => {
         type: "spring",
         delay: 1,
       }}
-      className={`sticky top-0  py-3 z-50  shadow-md ${
+      className={`max-w-screen sticky top-0  py-3 z-50  shadow-md ${
         isAbout ? "bg-black" : "bg-white"
       }`}
     >
