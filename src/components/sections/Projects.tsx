@@ -71,8 +71,8 @@ const Projects = () => {
         <div>
           <h1 className=" text-5xl text-center">Projects</h1>
 
-          <div className="flex w-full md:gap-20 items-start container mx-auto">
-            <div className="w-full py-[50vh]">
+          <div className="flex w-full gap-4 md:gap-20 items-start container mx-auto">
+            <div className="w-1/3 md:w-full py-[50vh]">
               <ul>
                 {projects.map((item) => (
                   <li key={item.id}>

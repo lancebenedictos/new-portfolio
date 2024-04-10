@@ -37,7 +37,7 @@ const FocusedProject = ({ project }: Props) => {
         }  bg-white bg-opacity-90 mx-auto z-20 fullscreen-${project.id}`}
       >
         <div
-          className="flex container bg-white mx-auto flex-col gap-6 min-h-screen p-20"
+          className="flex container bg-white mx-auto flex-col gap-6 min-h-screen p-4 md:p-20"
           onClick={(e) => e.stopPropagation()}
         >
           <div className="flex justify-between">
@@ -51,15 +51,15 @@ const FocusedProject = ({ project }: Props) => {
 
           <img
             src={project.img}
-            className=" aspect-video overflow-hidden self-start w-1/2 mx-auto rounded-md fullscreen-img scale-90"
+            className=" aspect-video overflow-hidden self-start md:w-1/2 mx-auto rounded-md fullscreen-img scale-90"
           />
 
           <div className="space-y-4">
-            <h1 className="text-5xl text-center self-center">
+            <h1 className="text-3xl md:text-5xl text-center self-center">
               {project.title}
             </h1>
 
-            <div className=" w-[50%] mx-auto space-y-2">
+            <div className=" md:w-[50%] mx-auto space-y-2">
               <p>{project.description}</p>
 
               {project.warning && (
@@ -101,7 +101,7 @@ const FocusedProject = ({ project }: Props) => {
           <div>
             <h2 className=" text-3xl mb-8">Technologies used</h2>
 
-            <div className="flex gap-3">
+            <div className="grid grid-cols-5 md:flex md:flex-wrap gap-3">
               {project.technologies.map((tech) => (
                 <span
                   key={tech.name}
