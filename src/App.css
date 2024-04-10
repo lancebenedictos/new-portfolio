@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  background-color: #f4f4f4;
+}
+
+html {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  /* overflow-x: hidden; */
+  scrollbar-width: thin;
+}
+
+p,
+span,
+div {
+  font-family: "Cabinet Grotesk", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+label,
+button {
+  font-family: "General Sans", sans-serif;
+}
+
+.mask-body,
+.mask {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #afa18f;
+  font-size: 64px;
+  line-height: 66px;
+  cursor: default;
+}
+
+.mask-body p,
+.mask p {
+  padding: 40px;
+}
+
+.mask-body span {
+  color: #ec4e39;
+}
+
+.mask {
+  mask-image: url("../src/assets/my_photo.jpeg");
+
+  mask-repeat: no-repeat;
+
+  mask-size: 40px;
+
+  background: #ec4e39;
+
+  position: absolute;
+
+  color: black;
+}
