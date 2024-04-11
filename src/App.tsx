@@ -1,5 +1,5 @@
 import "./App.css";
-import Footer from "./components/Footer";
+
 import MainContent from "./components/content/Content";
 import Nav from "./components/nav/Nav";
 import { useNavStore } from "./store/store";
