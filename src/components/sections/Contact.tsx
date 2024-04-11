@@ -66,11 +66,11 @@ const Contact = () => {
   return (
     <div className="min-h-[110vh] container mx-auto" id="contact" ref={ref}>
       <p className=" text-center text-3xl">Say Hello!</p>
-      <div className="flex flex-col md:flex-row items-center">
+      <div className="flex flex-col md:flex-row p-6 gap-10">
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="flex flex-col w-[80%] lg:w-[400px] p-4"
+          className="flex flex-col w-full md:w-1/2  mx-auto"
         >
           <label className="mt-4" htmlFor="user_name">
             Name
@@ -112,19 +112,19 @@ const Contact = () => {
           />
         </form>
 
-        <div>
-          <span>
+        <div className="md:w-1/2 md:items-end flex flex-col gap-4">
+          <div>
             <h3 className="font-medium text-lg">Contact</h3>
             <p>Lance Benedictos</p>
             <p>{personalData.email}</p>
             <p>{personalData.phone}</p>
-          </span>
+          </div>
 
-          <span>
+          <div className="flex items-center justify-center gap-4">
             <a
               href={personalData.linkedIn}
               target="_blank"
-              className="hidden md:flex underline font-bold hover:text-[#ec4e39]  items-center gap-2 underline-offset-4"
+              className=" flex underline font-bold hover:text-[#ec4e39]  items-center gap-1 underline-offset-4"
             >
               <LinkedinIcon />
               LinkedIn
@@ -132,12 +132,12 @@ const Contact = () => {
             <a
               href={personalData.linkedIn}
               target="_blank"
-              className="hidden md:flex underline font-bold hover:text-[#ec4e39]  items-center gap-2 underline-offset-4"
+              className=" flex underline font-bold hover:text-[#ec4e39]  items-center gap-1 underline-offset-4"
             >
-              <TiSocialGithubCircular />
+              <TiSocialGithubCircular size={25} />
               GitHub
             </a>
-          </span>
+          </div>
         </div>
       </div>
     </div>
