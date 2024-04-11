@@ -143,7 +143,7 @@ const Contact = () => {
               GitHub
             </a>
             <a
-              href="./resume.docx"
+              href="./resume.pdf"
               target="_blank"
               className=" flex underline font-bold hover:text-[#ec4e39]  items-center gap-1 underline-offset-4"
             >
