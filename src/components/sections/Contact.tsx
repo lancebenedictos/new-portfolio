@@ -2,6 +2,8 @@ import { useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { useNavStore } from "../../store/store";
 import emailjs from "@emailjs/browser";
+import { LinkedinIcon } from "lucide-react";
+import { TiSocialGithubCircular } from "react-icons/ti";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -109,6 +111,34 @@ const Contact = () => {
             disabled={isLoading}
           />
         </form>
+
+        <div>
+          <span>
+            <h3 className="font-medium text-lg">Contact</h3>
+            <p>Lance Benedictos</p>
+            <p>{personalData.email}</p>
+            <p>{personalData.phone}</p>
+          </span>
+
+          <span>
+            <a
+              href={personalData.linkedIn}
+              target="_blank"
+              className="hidden md:flex underline font-bold hover:text-[#ec4e39]  items-center gap-2 underline-offset-4"
+            >
+              <LinkedinIcon />
+              LinkedIn
+            </a>
+            <a
+              href={personalData.linkedIn}
+              target="_blank"
+              className="hidden md:flex underline font-bold hover:text-[#ec4e39]  items-center gap-2 underline-offset-4"
+            >
+              <TiSocialGithubCircular />
+              GitHub
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   );
