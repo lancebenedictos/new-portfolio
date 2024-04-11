@@ -15,7 +15,6 @@ function App() {
     >
       <Nav />
       <MainContent />
-      <Footer />
     </motion.div>
   );
 }
