@@ -4,7 +4,7 @@ import { useNavStore } from "../../store/store";
 
 const Header = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: "all" });
+  const isInView = useInView(ref, { amount: 0.6 });
   const changeSection = useNavStore((state) => state.changeSection);
   const section = useNavStore((state) => state.currentSection);
   const setIsChangeable = useNavStore((state) => state.setIsChangeable);
