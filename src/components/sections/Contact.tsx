@@ -4,6 +4,7 @@ import { useNavStore } from "../../store/store";
 import emailjs from "@emailjs/browser";
 import { LinkedinIcon } from "lucide-react";
 import { TiSocialGithubCircular } from "react-icons/ti";
+import { HiOutlineDocument } from "react-icons/hi";
 
 const Contact = () => {
   const ref = useRef(null);
@@ -116,9 +117,9 @@ const Contact = () => {
           />
         </form>
 
-        <div className="md:w-1/2 items-start flex flex-col gap-4">
+        <div className="md:w-1/2 items-start flex flex-col gap-4 ">
           <div>
-            <h3 className="font-medium text-lg">Contact</h3>
+            <h3 className="font-medium text-xl">Contact</h3>
             <p>Lance Benedictos</p>
             <p>{personalData.email}</p>
             <p>{personalData.phone}</p>
@@ -140,6 +141,14 @@ const Contact = () => {
             >
               <TiSocialGithubCircular size={25} />
               GitHub
+            </a>
+            <a
+              href="./resume.docx"
+              target="_blank"
+              className=" flex underline font-bold hover:text-[#ec4e39]  items-center gap-1 underline-offset-4"
+            >
+              <HiOutlineDocument size={25} />
+              CV
             </a>
           </div>
         </div>
