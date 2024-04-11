@@ -64,8 +64,12 @@ const Contact = () => {
   if (!VITE_PUBLIC_KEY || !VITE_TEMPLATE_ID || !VITE_SERVICE_ID)
     return <div>No key</div>;
   return (
-    <div className="min-h-[110vh] container mx-auto" id="contact" ref={ref}>
-      <p className=" text-center text-3xl">Say Hello!</p>
+    <div
+      className="min-h-screen container mx-auto flex flex-col justify-center"
+      id="contact"
+      ref={ref}
+    >
+      <p className=" text-center text-5xl font-medium">Say Hello!</p>
       <div className="flex flex-col md:flex-row p-6 gap-10">
         <form
           ref={form}
@@ -112,7 +116,7 @@ const Contact = () => {
           />
         </form>
 
-        <div className="md:w-1/2 md:items-end flex flex-col gap-4">
+        <div className="md:w-1/2 items-start flex flex-col gap-4">
           <div>
             <h3 className="font-medium text-lg">Contact</h3>
             <p>Lance Benedictos</p>
