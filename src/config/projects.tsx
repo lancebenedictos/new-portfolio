@@ -2,10 +2,12 @@ import shoe from "../assets/shoes.png";
 import food from "../assets/food.png";
 import blog from "../assets/blog.png";
 import portfolio from "../assets/portfolio.png";
+import resume from "../assets/resume.jpg";
 
 import {
   SiAuth0,
   SiExpress,
+  SiJsonwebtokens,
   SiMongodb,
   SiStripe,
   SiTailwindcss,
@@ -14,6 +16,7 @@ import {
 import { TbBrandFramerMotion, TbCircleLetterT } from "react-icons/tb";
 import { FaNodeJs, FaReact } from "react-icons/fa";
 import { GrStorage } from "react-icons/gr";
+import { RiOpenaiFill } from "react-icons/ri";
 
 const FEATURES = {
   react: {
@@ -59,6 +62,14 @@ const FEATURES = {
   query: {
     name: "React-Query",
     img: <TbCircleLetterT size={20} />,
+  },
+  jwt: {
+    name: "JWT",
+    img: <SiJsonwebtokens size={20} />,
+  },
+  openai: {
+    name: "OpenAI",
+    img: <RiOpenaiFill size={20} />,
   },
 };
 
@@ -117,6 +128,53 @@ export const projects: Project[] = [
     liveLink: "https://foodorderingapp-frontend.onrender.com/",
     description:
       "This app allows people to both order food and create a restaurant. It uses Stripe for payments and Auth0 for authentication. Users can select a city and search for restaurants based on name and cuisine",
+  },
+  {
+    title: "Resume generator",
+    warning: "This server runs on a free instance. It may take longer to load",
+    id: "resume",
+    img: resume,
+    features: [
+      {
+        name: "Search for jobs",
+        img: "https://res.cloudinary.com/flexibble/image/upload/v1712952258/resume/qlbqmwdmatbodxrfnu74.jpg",
+      },
+      {
+        name: "JWT authentication",
+        img: "https://res.cloudinary.com/flexibble/image/upload/v1712952258/resume/qlbqmwdmatbodxrfnu74.jpg",
+      },
+      {
+        name: "Generate and download tailored resume",
+        img: "https://res.cloudinary.com/flexibble/image/upload/v1712952258/resume/wxa2u8srcr0n9iftpd88.jpg",
+      },
+      {
+        name: "Create profile",
+        img: "https://res.cloudinary.com/flexibble/image/upload/v1712952258/resume/atowxpakfbfljntui8nh.jpg",
+      },
+      {
+        name: "Track all your food orders",
+        img: "https://res.cloudinary.com/flexibble/image/upload/v1712770633/food-app/ehep7ueqwo8ryv7ijros.jpg",
+      },
+      {
+        name: "Save jobs",
+        img: "https://res.cloudinary.com/flexibble/image/upload/v1712952257/resume/t4ed3bgmajyehavfd9jf.jpg",
+      },
+    ],
+    technologies: [
+      FEATURES.react,
+      FEATURES.express,
+      FEATURES.mongoDb,
+      FEATURES.node,
+      FEATURES.tailwind,
+      FEATURES.typescript,
+      FEATURES.query,
+      FEATURES.jwt,
+      FEATURES.openai,
+    ],
+    github: "https://github.com/lancebenedictos/resume-tracker",
+    liveLink: "https://resume-tracker-686h.onrender.com/",
+    description:
+      "This app allows users to search for jobs using a web scraper API from RapidAPI. Users are able to save jobs and generate and download resumes tailored for a job. Authentication is done using JWT.",
   },
   {
     title: "Portfolio",
