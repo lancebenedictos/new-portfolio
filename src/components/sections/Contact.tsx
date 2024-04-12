@@ -135,7 +135,7 @@ const Contact = () => {
               LinkedIn
             </a>
             <a
-              href={personalData.linkedIn}
+              href={personalData.github}
               target="_blank"
               className=" flex underline font-bold hover:text-[#ec4e39]  items-center gap-1 underline-offset-4"
             >
