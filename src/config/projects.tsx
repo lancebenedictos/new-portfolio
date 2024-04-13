@@ -152,10 +152,6 @@ export const projects: Project[] = [
         img: "https://res.cloudinary.com/flexibble/image/upload/v1712952258/resume/atowxpakfbfljntui8nh.jpg",
       },
       {
-        name: "Track all your food orders",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712770633/food-app/ehep7ueqwo8ryv7ijros.jpg",
-      },
-      {
         name: "Save jobs",
         img: "https://res.cloudinary.com/flexibble/image/upload/v1712952257/resume/t4ed3bgmajyehavfd9jf.jpg",
       },
