@@ -1,6 +1,6 @@
-import shoe from "../assets/shoes.png";
+// import shoe from "../assets/shoes.png";
 import food from "../assets/food.png";
-import blog from "../assets/blog.png";
+// import blog from "../assets/blog.png";
 import portfolio from "../assets/portfolio.png";
 import resume from "../assets/resume.jpg";
 
@@ -201,70 +201,6 @@ export const projects: Project[] = [
     liveLink: "https://lancebenedictos.dev/",
     description:
       "This website is dedicated to showcase my work. It is made using TypeScript and React. Animations are made with Framer Motion to give users a interactive user experience",
-  },
-  {
-    title: "Elev",
-    id: "elev",
-    img: shoe,
-    features: [
-      {
-        name: "See new inventory",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712777568/elev/gsat2vrznpgpsfq3t6z3.jpg",
-      },
-      {
-        name: "Testimonies",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712777568/elev/bj85cenuzouvobzwns8c.jpg",
-      },
-      {
-        name: "View all inventory",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712777568/elev/rvmz8bulaweupxq1iiks.jpg",
-      },
-      {
-        name: "Cart and checkout",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712777568/elev/srdr0mirruc80xlmwu4s.jpg",
-      },
-      {
-        name: "Pick shoe details",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712777568/elev/qhm5o0mmyn6joqzcnkwf.jpg",
-      },
-      {
-        name: "About page",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712777568/elev/e9enueljifeocdm1nmfe.jpg",
-      },
-    ],
-    technologies: [FEATURES.react, FEATURES.framer, FEATURES.tailwind],
-    github: "https://github.com/lancebenedictos/elev",
-    liveLink: "https://elev.vercel.app/",
-    description:
-      "Elev is a e-commerce shop that is dedicated to showcase shoes",
-  },
-  {
-    title: "Film blog",
-    id: "blog",
-    img: blog,
-    features: [
-      {
-        name: "Header",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712780030/blog/fxj9z5clwergrqilfaks.jpg",
-      },
-      {
-        name: "Film strip",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712780030/blog/yw5fb839c4fftuhgjiq0.jpg",
-      },
-      {
-        name: "Gallery",
-        img: "https://res.cloudinary.com/flexibble/image/upload/v1712780030/blog/rbb3xjd1733h0qbt4sqn.jpg",
-      },
-    ],
-    technologies: [
-      FEATURES.react,
-      FEATURES.framer,
-      FEATURES.tailwind,
-      FEATURES.typescript,
-    ],
-    github: "https://github.com/lancebenedictos/film-blog",
-    liveLink: "https://film-blog-iota.vercel.app/",
-    description: "This site is dedicated to showcase film photographs",
   },
 ];
 
